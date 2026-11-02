@@ -1,9 +1,11 @@
+import { Link } from "react-router";
+
 function Navbar() {
   return (
     <nav>
-      <a>Home</a>
-      <a>Shop</a>
-      <a>Cart</a>
+      <Link to="/">Home</Link>
+      <Link to="/shop">Shop</Link>
+      <Link to="/cart">Cart</Link>
     </nav>
   );
 }
