@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav>
       <Link to="/">Home</Link>
-      <Link to="/shop">Shop</Link>
-      <Link to="/cart">Cart</Link>
+      <Link to="/app/shop">Shop</Link>
+      <Link to="/app/cart">Cart({props.quantity})</Link>
     </nav>
   );
 }
