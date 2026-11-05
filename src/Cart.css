@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  border: 2px solid white;
+}
+
+img {
+  width: 150px;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 60px;
+}

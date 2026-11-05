@@ -1,0 +1,9 @@
+nav {
+  font-size: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.linkStyles {
+  text-decoration: none;
+}
