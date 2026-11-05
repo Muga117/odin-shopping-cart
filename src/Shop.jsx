@@ -2,7 +2,7 @@ import { useOutletContext } from "react-router";
 import styles from "./Shop.module.css";
 
 function Shop() {
-  const [items, setItems] = useOutletContext();
+  const [items] = useOutletContext();
   const [, , cart, setCart] = useOutletContext();
 
   function addToCart(id, title, price, image, quantity) {

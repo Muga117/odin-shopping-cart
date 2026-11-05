@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Shop from "./Shop.jsx";
 import Cart from "./Cart.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

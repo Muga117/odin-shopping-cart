@@ -1,7 +1,8 @@
 import { useOutletContext } from "react-router";
+import "./Cart.css";
 
 function Cart() {
-  const [, , cart, setCart] = useOutletContext();
+  const [, , cart] = useOutletContext();
 
   if (cart.length === 0) {
     return <>Cart is Empty</>;
@@ -16,7 +17,8 @@ function Cart() {
           </li>
         ))}
       </ul>
-      <p>
+      <p className="cartTotal">
+        Total:$
         {cart
           .map((item) => item.price * item.quantity)
           .reduce((total, num) => {
